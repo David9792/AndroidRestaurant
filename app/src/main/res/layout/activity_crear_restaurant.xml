@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_vanishing_stripes"
+    android:orientation="vertical"
+    tools:context=".CrearRestaurant">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/gravitas_one"
+        android:text="Creacion de Restaurante"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="20dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/restnom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle"
+                android:drawableStart="@drawable/ic_home_black_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Nombre Restaurant"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/design_default_color_secondary"
+                android:textColorHint="@color/design_default_color_secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/restNitt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle"
+                android:drawableStart="@android:drawable/btn_star_big_off"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Nit"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/design_default_color_secondary"
+                android:textColorHint="@color/design_default_color_secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameUser" />
+
+            <EditText
+                android:id="@+id/restProp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle"
+                android:drawableStart="@drawable/ic_baseline_account_circle_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Propietario"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/design_default_color_secondary"
+                android:textColorHint="@color/design_default_color_secondary"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/phoneUser" />
+
+
+            <EditText
+                android:id="@+id/restCall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle"
+                android:drawableStart="@drawable/ic_baseline_streetview_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Direccion"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                android:textColorLink="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/DireccionUser" />
+
+            <EditText
+                android:id="@+id/restTelef"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rectangle"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="Telefono"
+                android:inputType="textPersonName"
+                android:padding="16dp"
+                android:textColor="@color/colorAccent"
+                android:textColorHint="@color/colorAccent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/EmailUser" />
+
+
+            <ImageView
+                android:id="@+id/text"
+                android:layout_width="386dp"
+                android:layout_height="116dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+
+                />
+
+            <Button
+                android:id="@+id/btngaleria"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="SUBIR IMG" />
+
+            <Button
+                android:id="@+id/restbtn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Send" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
